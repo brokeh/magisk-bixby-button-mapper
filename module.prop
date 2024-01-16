@@ -1,0 +1,7 @@
+id=bixby-button-mapper
+name=Remap Bixby button on Samsung Galaxy S10e
+version=v1.0
+versionCode=100
+author=brokeh
+description=Remap the Bixby button on Samsung Galaxy S10e to the Camera button
+template=3
