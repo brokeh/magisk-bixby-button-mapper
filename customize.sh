@@ -3,7 +3,7 @@ for path in /odm/usr/keylayout/ /vendor/usr/keylayout/ /system/usr/keylayout/ /d
 do
     grep $path -rsle 'key  *703  *WINK' | while read file
     do
-        ui_print "Creating patch for $file -> ${MODPATH}${file}"
+        ui_print "Creating patch for $file"
         mkdir -p $(dirname ${MODPATH}${file})
         cp $file ${MODPATH}${file}
         sed -E -i 's/(key  *703  *)WINK/\1CAMERA/g' ${MODPATH}${file}
